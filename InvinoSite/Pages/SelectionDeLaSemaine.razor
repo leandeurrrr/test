@@ -1,0 +1,182 @@
+@page "/selection-de-la-semaine"
+
+<PageTitle>Vin du Moment</PageTitle>
+
+<div class="main-container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/a-propos">À propos de nous</a></li>
+                <li><a href="/vin-du-moment">Vin du moment</a></li>
+                <li><a href="/horaires-du-magasin">Horaires du magasin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="wine-of-the-moment">
+        <div class="wine-image">
+            <img src="images/BouteilleDeLaSemaine.jpg" alt="Bouteille de la semaine">
+        </div>
+        <div class="wine-description" >
+            <h2>Lampyres</h2>
+            <h2><strong>Contre-Attaque</strong></h2>
+            
+            <div class="citation">
+                <div class="image-container">
+                    <img src="images/Yannick.jpg" alt="Sommelier">
+                </div>
+                
+                <p>Sélection de Yannick :</p>
+                <p><i>"Le Lampyre contre-attaque est un vin exceptionnel qui séduit par sa complexité et son équilibre parfait. Ses arômes riches de fruits noirs et d'épices offrent une expérience gustative inoubliable. C'est un choix idéal pour accompagner vos repas les plus raffinés."</i></p>
+            </div>
+            
+            <p>Un vin rouge d'exception, riche en saveurs et en histoire. Profitez de ce vin élégant et raffiné, parfait pour toutes les grandes occasions. Disponible en stock limité, ne manquez pas l'opportunité de savourer cette merveille.</p>
+            <p><strong>Disponibilité:</strong> Disponible en stock limité</p>
+            
+            <table class="wine-info">
+                <thead>
+                    <tr>
+                        <th colspan="2">Informations sur le vin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Domaine viticole</td>
+                        <td>Lampyres</td>
+                    </tr>
+                    <tr>
+                        <td>Cépages</td>
+                        <td>Mourvedre</td>
+                    </tr>
+                    <tr>
+                        <td>Région</td>
+                        <td>France / Languedoc-Roussillon / Côtes du Roussillon</td>
+                    </tr>
+                    <tr>
+                        <td>Style de vin</td>
+                        <td>Vin rouge du Languedoc-Roussillon</td>
+                    </tr>
+                    <tr>
+                        <td>Teneur en alcool</td>
+                        <td>13 %</td>
+                    </tr>
+                    <tr>
+                        <td>Allergènes</td>
+                        <td>Contient : sulfites</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Nom de la Société. Tous droits réservés.</p>
+    </footer>
+</div>
+
+<style>
+    .main-container {
+        font-family: Arial, sans-serif;
+        color: white; /* Le texte sera blanc */
+        background-color: #383838; /* Le fond sera gris foncé */
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #333;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+    }
+
+    header nav ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+    }
+
+    .wine-of-the-moment {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .wine-image {
+        flex: none;
+        width: 20%;
+        overflow: hidden;
+    }
+
+    .wine-image img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+    }
+    
+    .image-container {
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .citation{
+        margin-bottom: 15px;
+        background-color: #222222;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .wine-description {
+        flex: 2;
+        margin-left: 20px;
+    }
+
+    .wine-description h2 {
+        margin-top: 0;
+    }
+
+    .wine-info {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #444; /* Pour se démarquer du fond */
+    }
+
+    .wine-info th,
+    .wine-info td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .wine-info th {
+        background-color: #555;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+    }
+</style>
